@@ -1,0 +1,8 @@
+{
+    "manifest_version": 3,
+    "name": "Duplicate Tab Cleaner",
+    "version": "1.0",
+    "description": "Finds and closes duplicate tabs in your active window.",
+    "permissions": ["tabs"],
+    "action": {"default_popup": "popup.html"}
+}
