@@ -8,8 +8,11 @@ document.getElementById('cleanTabs').addEventListener('click', async() => {
         const duplicates = [];
 
         tabs.forEach(tab => {
+            if(tab.id == null || !tab.url){
+                return;
+            }
             if(seenUrls.has(tab.url)){
-                duplicates.push(tab);
+                duplicates.push(tab.id);
             }else{
                 seenUrls.add(tab.url);
             }
